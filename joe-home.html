@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Personal Portfolio - Joe Robinson</title>
+     <link rel = "stylesheet"  type = "text/css"   href = "css/joe.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- jQuery library -->
@@ -11,28 +12,29 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-    
-        <nav id="navbar" class="navbar navbar-default" role="navigation">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbarLinks">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#"><img src="images/logo.png" alt="site logo" ></a>
-            </div>
-            <div class="collapse navbar-collapse navbarLinks">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#home">About</a></li>
-                <li class=""><a href="#about">Work</a></li>
-                <li class=""><a href="#contact">Contact</a></li>
-                <li class=""><a href="#map">Blog</a></li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-        <div data-spy="scroll" data-target="#navbar" data-offset="0" class="scrollspy-example">
+  
+  <header> 
+  <img id= "logo" src="images/logo.jpg" alt="site logo"  >
+  </header>
+  
+<div id="navigation">
+  <button type="button" class="btn btn-default" aria-label="Left Align">
+  <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> About
+</button>
+
+<button type="button" class="btn btn-default">
+  <span class="glyphicon glyphicon-file" aria-hidden="true"></span> Work
+</button>
+
+<button type="button" class="btn btn-default">
+  <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Contact
+</button>
+
+<button type="button" class="btn btn-default">
+  <span class="glyphicon glyphicon-save" aria-hidden="true"></span> CV
+</button>
+</div>   
+
     
 </body>
 </html>

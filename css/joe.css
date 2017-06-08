@@ -1,0 +1,21 @@
+html {
+    background-color: #232B2B;
+}
+
+header {
+    height: 120px;
+    align-content: center;
+    background-color: #232B2B;
+}
+
+#logo {
+    padding-top:8px; 
+    display: block;
+    margin: 0 auto;
+}
+
+#navigation {
+
+    background-color: #232B2B;
+    
+}
