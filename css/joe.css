@@ -3,19 +3,31 @@ html {
 }
 
 header {
-    height: 120px;
+    height: 155px;
     align-content: center;
     background-color: #232B2B;
 }
 
 #logo {
+
     padding-top:8px; 
     display: block;
     margin: 0 auto;
 }
 
 #navigation {
-
+    align-content: center;
     background-color: #232B2B;
-    
 }
+
+.btn-group.outline {
+    background: none;
+	padding: 12px 22px;
+}
+
+
+/*Colors:
+black - #232B2B
+blue - #87CEFA
+orange - #DC3D24
+*/
