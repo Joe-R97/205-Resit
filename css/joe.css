@@ -3,6 +3,7 @@ html {
 }
 
 header {
+    position: relative;
     height: 155px;
     align-content: center;
     background-color: #232B2B;
@@ -16,6 +17,7 @@ header {
 }
 
 #navigation {
+    position: relative;
     align-content: center;
     background-color: #232B2B;
 }
@@ -23,6 +25,16 @@ header {
 .btn-group.outline {
     background: none;
 	padding: 12px 22px;
+}
+
+#container p {
+    background-color: #232B2B;
+    color: #DC3D24;
+	font-size: 70px;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: #87CEFA 3px 3px 5px;
+	
 }
 
 
