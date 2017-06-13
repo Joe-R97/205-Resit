@@ -3,31 +3,26 @@ html {
 }
 
 header {
-    position: relative;
-    height: 155px;
+    position: static;
+    height: 270px;
     align-content: center;
     background-color: #232B2B;
 }
 
 #logo {
-
     padding-top:8px; 
     display: block;
     margin: 0 auto;
+    padding-bottom: 8px;
 }
 
 #navigation {
-    position: relative;
     align-content: center;
     background-color: #232B2B;
 }
 
-.btn-group.outline {
-    background: none;
-	padding: 12px 22px;
-}
 
-#container p {
+#title p {
     background-color: #232B2B;
     color: #DC3D24;
 	font-size: 70px;
@@ -36,6 +31,7 @@ header {
 	text-shadow: #87CEFA 3px 3px 5px;
 	
 }
+
 
 
 /*Colors:
