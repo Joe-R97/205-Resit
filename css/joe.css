@@ -32,6 +32,18 @@ header {
 	
 }
 
+#b4link {
+    align-content: center;
+    color: #DC3D24;
+}
+
+#Button1 {
+    height: 40px;
+    width: 500px;
+    background-color:#87CEFA;
+    color:#DC3D24;
+    border-color: transparent;
+}
 
 
 /*Colors:

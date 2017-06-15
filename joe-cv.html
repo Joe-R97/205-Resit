@@ -36,7 +36,19 @@
   <div id="title">
       <p>CV</p>
       </div>
-      
+        
+        <p id="b4link"> To download a full up to date version of my CV click the following link:</p>
+        <a id="CVLink"></a>
+        <input id="Button1" type="button" value="Download" onclick="OpenCV()" />
+        <script>
+            function OpenCV() {
+                var CVlink = document.getElementById("CVLink");
+                CVlink.setAttribute("href", "cv/CV.docx");
+                CVlink.click();
+            }
+        </script>
+
+
 </header>
 
 </body>
