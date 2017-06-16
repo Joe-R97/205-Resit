@@ -45,6 +45,39 @@ header {
     border-color: transparent;
 }
 
+#profile {
+    display: block;
+    margin: 0 auto;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+
+#about{
+    color:#DC3D24;
+    text-align: justify;
+    -webkit-transition: color 200ms cubic-bezier(0.25, 0.1, 0.25, 1) 10ms;
+    -moz-transition: color 200ms cubic-bezier(0.25, 0.1, 0.25, 1) 10ms;
+    -o-transition: color 200ms cubic-bezier(0.25, 0.1, 0.25, 1) 10ms;
+    transition: color 700ms cubic-bezier(0.25, 0.1, 0.25, 1) 10ms;
+}
+
+#aboutme {
+font-size: 1em;
+line-height: 1.25em;
+margin: 0.625em 0;
+text-align: justify;
+}
+#aboutme:first-letter {
+color:#87CEFA;
+font-size: 9em;
+line-height: 1em;
+}
+#aboutme + #aboutme:first-letter {
+font-size: 1em;
+line-height: 1.25em;
+}
+
 
 /*Colors:
 black - #232B2B
