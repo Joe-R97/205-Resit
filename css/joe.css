@@ -31,15 +31,23 @@ header {
 	text-shadow: #87CEFA 3px 3px 5px;
 	
 }
-
+p{
+    text-align:center;
+    color:#DC3D24 ;
+    display: block;
+    margin: 0 auto;
+}
 #b4link {
+    text-align: center;
     align-content: center;
     color: #DC3D24;
 }
 
 #Button1 {
-    height: 40px;
-    width: 500px;
+    display: block;
+    width:45%;
+    height:20%;
+    margin: 0 auto;
     background-color:#87CEFA;
     color:#DC3D24;
     border-color: transparent;
@@ -54,29 +62,57 @@ header {
 }
 
 #about{
+    padding-left: 120px;
+    padding-right: 120px;
     color:#DC3D24;
     text-align: justify;
-    -webkit-transition: color 200ms cubic-bezier(0.25, 0.1, 0.25, 1) 10ms;
-    -moz-transition: color 200ms cubic-bezier(0.25, 0.1, 0.25, 1) 10ms;
-    -o-transition: color 200ms cubic-bezier(0.25, 0.1, 0.25, 1) 10ms;
-    transition: color 700ms cubic-bezier(0.25, 0.1, 0.25, 1) 10ms;
+    
 }
 
-#aboutme {
-font-size: 1em;
-line-height: 1.25em;
-margin: 0.625em 0;
-text-align: justify;
+h1{
+    color: #DC3D24;
+    font-size: 48px;
+    font-family: 'Signika', sans-serif;
+    padding-bottom: 10px; }
+
+
+#aboutme{
+    font-family: 'Inder', sans-serif; 
+    line-height: 28px; 
+    margin-bottom: 15px; 
+    color: #DC3D24;
+    
 }
-#aboutme:first-letter {
-color:#87CEFA;
-font-size: 9em;
-line-height: 1em;
+
+
+a {
+    pointer-events: none;
+    text-decoration: none;
+    color: #87CEFA;
 }
-#aboutme + #aboutme:first-letter {
-font-size: 1em;
-line-height: 1.25em;
+
+
+.date {
+    float: left; }
+
+
+.author {
+    float: right;}
+    
+    
+object{
+      position: static; /* or absolute */
+      background-color: white;
+      display: block;
+      margin: 0 auto;
+      height: 80%;
+      width: 75%;
+      
 }
+
+
+
+
 
 
 /*Colors:
