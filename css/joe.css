@@ -101,7 +101,7 @@ a {
     
     
 object{
-      position: static; /* or absolute */
+      position: static;
       background-color: white;
       display: block;
       margin: 0 auto;
@@ -110,7 +110,26 @@ object{
       
 }
 
+table {
+    position: static;
+    border-collapse: collapse;
+    width: 70%;
+    height: 50%;
+    color:#DC3D24;
+}
 
+table, td, th{
+    border-style: outset;
+    border-color: #87CEFA;
+}
+
+#addressline2{
+    border-bottom: none;
+}
+
+#addressline3{
+    border-top: none;
+}
 
 
 
