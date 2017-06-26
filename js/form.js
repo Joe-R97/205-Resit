@@ -24,3 +24,11 @@ document.onclick = function(event) {
     }
 }
 
+//Validates form making sure the corect information is given
+function validateForm() {
+    var x = document.forms["form"]["fullname"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}

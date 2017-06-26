@@ -64,34 +64,36 @@
     </tr>
 </table>
 
-<p> ??? </p>
-<button type="button" id="showform"> Feedback</button>
+<br>
+<p> Have any enquires or feedback then click below... </p>
+<button type="button" id="showform"> Get in touch</button>
 <div id="form" class="modal">
 
   <div class="modal-content">
     <span class="close">&times;</span>
-    <p>Feel free to leave some feeback...</p>
+    <p>Feel free to leave some feedback...</p>
 <div class="container">
-  <form action="mailto:joe_robinson_1@hotmail.co.uk" method="post" enctype="text/plain">
+  <form name:"form" action="mailto:joe_robinson_1@hotmail.co.uk"  onsubmit="return validateForm()" method="post" enctype="text/plain">
 
     <label for="fullname">Full Name:</label><br>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    <input type="text" id="fname" name="fullname" placeholder="Your full name..">
     <br>
     
-    <label for="lname">Email:</label><br>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <label for="email">Email:</label><br>
+    <input type="text" id="email" name="lastname" placeholder="Your email">
     <br>
     
-    <label for="country">Subject:</label>
-    <select id="country" name="country">
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
+    <label for="subject">Subject:</label><br>
+    <select id="subject" name="subject">
+      <option value="feedback">General feedback</option>
+      <option value="enquiries">Enquiries</option>
+      <option value="other">Other</option>
     </select>
-
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
+    <br>
+    <label for="comments">Comments:</label><br>
+    <textarea id="comments" name="comments" placeholder="Write something.." ></textarea>
+    <br>
+    
     <input type="submit" value="Submit">
     <input type="reset" value="Reset">
 
