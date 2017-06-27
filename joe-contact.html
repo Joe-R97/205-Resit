@@ -1,102 +1,105 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Personal Portfolio - Joe Robinson</title>
-     <link rel = "stylesheet"  type = "text/css"   href = "css/joe.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-<body>
-  
-  <header>
 
-<ul>
-  <li><a class="glyphicon glyphicon-home" href="joe-home.html"> Home</a></li>
-  <li><a class="glyphicon glyphicon-info-sign" href="joe-about.html"> About</a></li>
-  <li class="active"><a class="glyphicon glyphicon-envelope" href="joe-contact.html"> Contact</a></li>
-  <li><a class="glyphicon glyphicon-save" href="joe-cv.html"> CV</a></li>
-</ul>
-        
-  <img id= "logo" src="images/logo-blue.png" alt="site logo"  >
-  
-  <div id="title">
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Portfolio - Joe Robinson</title>
+  <link rel="stylesheet" type="text/css" href="css/joe.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <section>
+
+    <ul>
+      <li><a class="glyphicon glyphicon-home" href="joe-home.html"> Home</a></li>
+      <li><a class="glyphicon glyphicon-info-sign" href="joe-about.html"> About</a></li>
+      <li class="active"><a class="glyphicon glyphicon-envelope" href="joe-contact.html"> Contact</a></li>
+      <li><a class="glyphicon glyphicon-save" href="joe-cv.html"> CV</a></li>
+    </ul>
+
+    <img id="logo" src="images/logo-blue.png" alt="site logo">
+
+    <div id="title">
       <p>Contact</p>
-      </div>
-<table>
-    <tr>
+    </div>
+    <table>
+      <tr>
         <td>Full Name:</td>
         <td>Joe Robinson</td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td>Email:</td>
         <td>joe_robinson_1@hotmail.co.uk</td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td>Mobile:</td>
         <td>07758646532</td>
-    </tr>
-    <tr id="addressline1">
+      </tr>
+      <tr id="addressline1">
         <td>Home Address:</td>
         <td>31 Keppel Street</td>
-    </tr>
-    <tr id="addressline2">
+      </tr>
+      <tr id="addressline2">
         <td></td>
         <td>Coventry</td>
-    </tr>
-    <tr id="addressline3">
+      </tr>
+      <tr id="addressline3">
         <td></td>
         <td>CV1 5HP</td>
-    </tr>
-</table>
+      </tr>
+    </table>
 
-<br>
-<p> Have any enquires or feedback then click below... </p>
-<button type="button" id="showform"> Get in touch</button>
-<div id="form" class="modal">
-
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>Feel free to leave some feedback...</p>
-<div class="container">
-  <form name:"form" action="mailto:joe_robinson_1@hotmail.co.uk"  onsubmit="return validateForm()" method="post" enctype="text/plain">
-
-    <label for="fullname">Full Name:</label><br>
-    <input type="text" id="fname" name="fullname" placeholder="Your full name..">
     <br>
-    
-    <label for="email">Email:</label><br>
-    <input type="text" id="email" name="lastname" placeholder="Your email">
-    <br>
-    
-    <label for="subject">Subject:</label><br>
-    <select id="subject" name="subject">
+    <p> Have any enquires or feedback then click below... </p>
+    <button type="button" id="showform"> Get in touch</button>
+    <div id="form" class="modal">
+
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Feel free to leave some feedback...</p>
+        <div class="container">
+          <form name: "form" action="mailto:joe_robinson_1@hotmail.co.uk" onsubmit="return validateForm()" method="post" enctype="text/plain">
+
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fname" name="fullname" placeholder="Your full name.." required>
+            <br>
+
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="lastname" placeholder="Your email" required>
+            <br>
+
+            <label for="subject">Subject:</label><br>
+            <select id="subject" name="subject">
       <option value="feedback">General feedback</option>
       <option value="enquiries">Enquiries</option>
       <option value="other">Other</option>
     </select>
-    <br>
-    <label for="comments">Comments:</label><br>
-    <textarea id="comments" name="comments" placeholder="Write something.." ></textarea>
-    <br>
-    
-    <input type="submit" value="Submit">
-    <input type="reset" value="Reset">
+            <br>
+            <label for="comments">Comments:</label><br>
+            <textarea id="comments" name="comments" placeholder="Write something.." required></textarea>
+            <br>
 
-  </form>
-</div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
 
-</div>
+          </form>
+        </div>
 
-<script src="js/form.js"></script>
+      </div>
 
-</header>
+      <script src="js/form.js"></script>
+
+  </section>
 
 
 
 </body>
+
 </html>
