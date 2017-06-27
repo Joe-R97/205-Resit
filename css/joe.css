@@ -9,6 +9,34 @@ header {
     background-color: #232B2B;
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #232B2B;;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #87CEFA;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #DC3D24;
+}
+
 #logo {
     padding-top:8px; 
     display: block;
@@ -79,6 +107,7 @@ h1{
 
 
 #aboutme{
+    text-align: justify;
     font-family: 'Inder', sans-serif; 
     line-height: 28px; 
     margin-bottom: 15px; 
