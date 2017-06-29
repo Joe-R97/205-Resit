@@ -1,15 +1,33 @@
-html {
+/*
+[Master Stylesheet]
+
+The master stylesheet for Joe Robinson - Portfolio Site, and it's associated pages:
+
+joe-home.html
+joe-about.html
+joe-contact.html
+joe-CV.html
+*/
+
+/* 
+ALL PAGES 
+
+The styles defined below are used on all 4 pages 
+*/
+
+
+html { /* sets the background for everything within the <HTML> tag */
     background-color: #232B2B;
 }
 
-section {
+
+section { /* makes sure that the positioning of objects in the <section> tag are within the normal flow of the page, aligned to the center and have the same background colour */
     position: static;
-    height: 270px;
     align-content: center;
     background-color: #232B2B;
 }
 
-ul {
+ul { /* removes the uneeded styles from the <ul> used within the navigation bar, adding the same background colour */
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -17,11 +35,11 @@ ul {
     background-color: #232B2B;;
 }
 
-li {
+li { /* makes the list elements float side by side rather than in a list */
     float: left;
 }
 
-li a {
+li a { /* gives the text of each list element a blue colour, aliging the text to the center and adding space between each element */
     display: block;
     color: #87CEFA;
     text-align: center;
@@ -29,28 +47,29 @@ li a {
     text-decoration: none;
 }
 
-li a:hover:not(.active) {
+li a:hover:not(.active) { /* allows each element to change colour on hover of the cursor */
     background-color: #111;
 }
 
-.active {
+.active { /* the element which has the class "active" (the page which is currently open) has a background colour of orang  */
     background-color: #DC3D24;
 }
 
-#logo {
+#logo { /* gives the logo some space between the navbar and the main contnet of the page making it be more central */
     padding-top:8px; 
     display: block;
     margin: 0 auto;
     padding-bottom: 8px;
 }
 
-#navigation {
-    align-content: center;
-    background-color: #232B2B;
-}
+/*
+ABOUT, CONTACT, CV
+
+The styles defined below are used on the 'About' (joe-about.html), 'contact' (joe-contact.html), and the 'CV' (joe-cv.html) pages
+*/
 
 
-#title p {
+#title p { /* sets the colour (orange) and size of the title, but also gives them a shadow effect with a blue colour */
     background-color: #232B2B;
     color: #DC3D24;
 	font-size: 70px;
@@ -59,31 +78,21 @@ li a:hover:not(.active) {
 	text-shadow: #87CEFA 3px 3px 5px;
 	
 }
-p{
+
+p{ /* makes sure the text used on the pages is within the center and has the same orange colour */
     text-align:center;
     color:#DC3D24 ;
     display: block;
     margin: 0 auto;
 }
-#b4link {
-    text-align: center;
-    align-content: center;
-    color: #DC3D24;
-}
 
-#Button1, #showform {
-    display: block;
-    width:45%;
-    height:20%;
-    margin: 0 auto;
-    background-color:#87CEFA;
-    border: 0.5px solid #DC3D24;
-    border-radius: 25px;
-    color:#DC3D24;
+/*
+ABOUT
 
-}
+the following styles all relate to the 'About' (joe-about.html) page
+*/ 
 
-#profile {
+#profile { /* makes sure the profile picture is aligned to the centre with the correct height and width, and also has a curved border */
     display: block;
     margin: 0 auto;
     height: 250px;
@@ -91,7 +100,7 @@ p{
     border-radius: 50%;
 }
 
-#about{
+#about{ /* gives all the content in the divider with the "about" id some padding so it's not complete spread across the page, the text colour is set to orange and justified */
     padding-left: 120px;
     padding-right: 120px;
     color:#DC3D24;
@@ -99,14 +108,14 @@ p{
     
 }
 
-h1{
+h1{ /* Give the heading to the paragraph the orange colour, a resonable size and font style, as well as some pacing between it and the paragraph */
     color: #DC3D24;
     font-size: 48px;
     font-family: 'Signika', sans-serif;
     padding-bottom: 10px; }
 
 
-#aboutme{
+#aboutme{ /* makes sure the text is justified and has a specific font style, and spacing between the lines as well as the same orange colour. */
     text-align: justify;
     font-family: 'Inder', sans-serif; 
     line-height: 28px; 
@@ -116,21 +125,58 @@ h1{
 }
 
 
-a {
+a { /* highlights the text within the paragraph which are defined by the <a> tag */
     text-decoration: none;
     color: #87CEFA;
 }
 
 
-.date {
+.date { /* spaces the date at the bottom of the paragrapgh to the left hand side */
     float: left; }
 
 
-.author {
+.author { /* spaces the authors name at the bottom of the paragrapgh to the right hand side */
     float: right;}
     
-    
-object{
+/*
+CONTACT
+
+the following styles all relate to the 'Contact' (joe-contant.html) page
+*/ 
+
+
+table { /* aligns the tables of contact details to the center, giving the text the orange colour */
+    position: static;
+    border-collapse: collapse;
+    width: 70%;
+    height: 50%;
+    color:#DC3D24;
+}
+
+table, td, th{ /* gives the table a border with the blue colour */
+    position: static;
+    margin: 0 auto;
+    border-style: outset;
+    border-color: #87CEFA;
+}
+
+.modal-content{ /* set the pop up window up to appear within the centre of the page */
+    align-content:center;
+    width: 45%;
+    margin-left: 30%;
+}
+
+#comments{ /* gives a larger space to comments box used within the form */
+    height:200px;
+}
+
+/*
+CV
+
+the following styles all relate to the 'CV' (joe-cv.html) page
+*/ 
+
+object{ /* Gives postion, size and a background colour to the object used to show a snippet of the CV */
       position: static;
       background-color: white;
       display: block;
@@ -140,43 +186,24 @@ object{
       
 }
 
-table {
-    position: static;
-    border-collapse: collapse;
-    width: 70%;
-    height: 50%;
-    color:#DC3D24;
-}
-
-table, td, th{
-    position: static;
+#Button1, #showform { /* sets the style of button used to open the downloadable CV, giving it positioning on the page, as well as a blue background blue and orange for the colour of text, also gives the border curves */
+    display: block;
+    width:45%;
+    height:20%;
     margin: 0 auto;
-    border-style: outset;
-    border-color: #87CEFA;
-}
-
-#addressline2{
-    border-bottom: none;
-}
-
-#addressline3{
-    border-top: none;
-}
-
-.modal-content{
-    align-content:center;
-    width: 45%;
-    margin-left: 30%;
-}
-
-#comments{
-    height:200px;
+    background-color:#87CEFA;
+    border: 0.5px solid #DC3D24;
+    border-radius: 25px;
+    color:#DC3D24;
+/* NOTE: this also sets ou the same style for the button on the contact page with the id 'showform'*/
 }
 
 
+/*
+NOTE:
 
+The Colours referred to within the notes above are not referring to the colour name, but the following Hex Code's:
 
-/*Colors:
 black - #232B2B
 blue - #87CEFA
 orange - #DC3D24
