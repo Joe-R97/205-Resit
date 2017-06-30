@@ -1,3 +1,9 @@
 <h1> Resit Coursework </h1>
 
-all files related the Resit Coursework Asignment for 205CDE - Developing the Modern Web 1 to be placed here. 
+<h2> 205CDE - Developing the Modern Web</h2>
+
+Joe Robinson 
+SID: 6457556
+
+
+All the relevant files for the Portfolio site created as part of the resit assignment for 205CDE can be found above. 
