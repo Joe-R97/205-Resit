@@ -9,37 +9,42 @@ joe-contact.html
 joe-CV.html
 */
 
+
 /* 
 ALL PAGES 
 
 The styles defined below are used on all 4 pages 
 */
 
-
-html { /* sets the background for everything within the <HTML> tag */
+html {
+    /* sets the background for everything within the <HTML> tag */
     background-color: #232B2B;
 }
 
-
-section { /* makes sure that the positioning of objects in the <section> tag are within the normal flow of the page, aligned to the center and have the same background colour */
+section {
+    /* makes sure that the positioning of objects in the <section> tag are within the normal flow of the page, aligned to the center and have the same background colour */
     position: static;
     align-content: center;
     background-color: #232B2B;
 }
 
-ul { /* removes the uneeded styles from the <ul> used within the navigation bar, adding the same background colour */
+ul {
+    /* removes the uneeded styles from the <ul> used within the navigation bar, adding the same background colour */
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #232B2B;;
+    background-color: #232B2B;
+    ;
 }
 
-li { /* makes the list elements float side by side rather than in a list */
+li {
+    /* makes the list elements float side by side rather than in a list */
     float: left;
 }
 
-li a { /* gives the text of each list element a blue colour, aliging the text to the center and adding space between each element */
+li a {
+    /* gives the text of each list element a blue colour, aliging the text to the center and adding space between each element */
     display: block;
     color: #87CEFA;
     text-align: center;
@@ -47,20 +52,24 @@ li a { /* gives the text of each list element a blue colour, aliging the text to
     text-decoration: none;
 }
 
-li a:hover:not(.active) { /* allows each element to change colour on hover of the cursor */
+li a:hover:not(.active) {
+    /* allows each element to change colour on hover of the cursor */
     background-color: #111;
 }
 
-.active { /* the element which has the class "active" (the page which is currently open) has a background colour of orang  */
+.active {
+    /* the element which has the class "active" (the page which is currently open) has a background colour of orang  */
     background-color: #DC3D24;
 }
 
-#logo { /* gives the logo some space between the navbar and the main contnet of the page making it be more central */
-    padding-top:8px; 
+#logo {
+    /* gives the logo some space between the navbar and the main contnet of the page making it be more central */
+    padding-top: 8px;
     display: block;
     margin: 0 auto;
     padding-bottom: 8px;
 }
+
 
 /*
 ABOUT, CONTACT, CV
@@ -68,31 +77,33 @@ ABOUT, CONTACT, CV
 The styles defined below are used on the 'About' (joe-about.html), 'contact' (joe-contact.html), and the 'CV' (joe-cv.html) pages
 */
 
-
-#title p { /* sets the colour (orange) and size of the title, but also gives them a shadow effect with a blue colour */
+#title p {
+    /* sets the colour (orange) and size of the title, but also gives them a shadow effect with a blue colour */
     background-color: #232B2B;
     color: #DC3D24;
-	font-size: 70px;
-	text-align: center;
-	text-transform: uppercase;
-	text-shadow: #87CEFA 3px 3px 5px;
-	
+    font-size: 70px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: #87CEFA 3px 3px 5px;
 }
 
-p{ /* makes sure the text used on the pages is within the center and has the same orange colour */
-    text-align:center;
-    color:#DC3D24 ;
+p {
+    /* makes sure the text used on the pages is within the center and has the same orange colour */
+    text-align: center;
+    color: #DC3D24;
     display: block;
     margin: 0 auto;
 }
+
 
 /*
 ABOUT
 
 the following styles all relate to the 'About' (joe-about.html) page
-*/ 
+*/
 
-#profile { /* makes sure the profile picture is aligned to the centre with the correct height and width, and also has a curved border */
+#profile {
+    /* makes sure the profile picture is aligned to the centre with the correct height and width, and also has a curved border */
     display: block;
     margin: 0 auto;
     height: 250px;
@@ -100,102 +111,114 @@ the following styles all relate to the 'About' (joe-about.html) page
     border-radius: 50%;
 }
 
-#about{ /* gives all the content in the divider with the "about" id some padding so it's not complete spread across the page, the text colour is set to orange and justified */
+#about {
+    /* gives all the content in the divider with the "about" id some padding so it's not complete spread across the page, the text colour is set to orange and justified */
     padding-left: 120px;
     padding-right: 120px;
-    color:#DC3D24;
+    color: #DC3D24;
     text-align: justify;
-    
 }
 
-h1{ /* Give the heading to the paragraph the orange colour, a resonable size and font style, as well as some pacing between it and the paragraph */
+h1 {
+    /* Give the heading to the paragraph the orange colour, a resonable size and font style, as well as some pacing between it and the paragraph */
     color: #DC3D24;
     font-size: 48px;
     font-family: 'Signika', sans-serif;
-    padding-bottom: 10px; }
-
-
-#aboutme{ /* makes sure the text is justified and has a specific font style, and spacing between the lines as well as the same orange colour. */
-    text-align: justify;
-    font-family: 'Inder', sans-serif; 
-    line-height: 28px; 
-    margin-bottom: 15px; 
-    color: #DC3D24;
-    
+    padding-bottom: 10px;
 }
 
+#aboutme {
+    /* makes sure the text is justified and has a specific font style, and spacing between the lines as well as the same orange colour. */
+    text-align: justify;
+    font-family: 'Inder', sans-serif;
+    line-height: 28px;
+    margin-bottom: 15px;
+    color: #DC3D24;
+}
 
-a { /* highlights the text within the paragraph which are defined by the <a> tag */
+a {
+    /* highlights the text within the paragraph which are defined by the <a> tag */
     text-decoration: none;
     color: #87CEFA;
 }
 
+.date {
+    /* spaces the date at the bottom of the paragrapgh to the left hand side */
+    float: left;
+}
 
-.date { /* spaces the date at the bottom of the paragrapgh to the left hand side */
-    float: left; }
+.author {
+    /* spaces the authors name at the bottom of the paragrapgh to the right hand side */
+    float: right;
+}
 
 
-.author { /* spaces the authors name at the bottom of the paragrapgh to the right hand side */
-    float: right;}
-    
 /*
 CONTACT
 
 the following styles all relate to the 'Contact' (joe-contant.html) page
-*/ 
+*/
 
-
-table { /* aligns the tables of contact details to the center, giving the text the orange colour */
+table {
+    /* aligns the tables of contact details to the center, giving the text the orange colour */
     position: static;
     border-collapse: collapse;
     width: 70%;
     height: 50%;
-    color:#DC3D24;
+    color: #DC3D24;
 }
 
-table, td, th{ /* gives the table a border with the blue colour */
+table,
+td,
+th {
+    /* gives the table a border with the blue colour */
     position: static;
     margin: 0 auto;
     border-style: outset;
     border-color: #87CEFA;
 }
 
-.modal-content{ /* set the pop up window up to appear within the centre of the page */
-    align-content:center;
+.modal-content {
+    /* set the pop up window up to appear within the centre of the page */
+    align-content: center;
     width: 45%;
     margin-left: 30%;
 }
 
-#comments{ /* gives a larger space to comments box used within the form */
-    height:200px;
+#comments {
+    /* gives a larger space to comments box used within the form */
+    height: 200px;
 }
+
 
 /*
 CV
 
 the following styles all relate to the 'CV' (joe-cv.html) page
-*/ 
+*/
 
-object{ /* Gives postion, size and a background colour to the object used to show a snippet of the CV */
-      position: static;
-      background-color: white;
-      display: block;
-      margin: 0 auto;
-      height: 80%;
-      width: 75%;
-      
+object {
+    /* Gives postion, size and a background colour to the object used to show a snippet of the CV */
+    position: static;
+    background-color: white;
+    display: block;
+    margin: 0 auto;
+    height: 80%;
+    width: 75%;
 }
 
-#Button1, #showform { /* sets the style of button used to open the downloadable CV, giving it positioning on the page, as well as a blue background blue and orange for the colour of text, also gives the border curves */
+#Button1,
+#showform {
+    /* sets the style of button used to open the downloadable CV, giving it positioning on the page, as well as a blue background blue and orange for the colour of text, also gives the border curves */
     display: block;
-    width:45%;
-    height:20%;
+    width: 45%;
+    height: 20%;
     margin: 0 auto;
-    background-color:#87CEFA;
+    background-color: #87CEFA;
     border: 0.5px solid #DC3D24;
     border-radius: 25px;
-    color:#DC3D24;
-/* NOTE: this also sets ou the same style for the button on the contact page with the id 'showform'*/
+    color: #DC3D24;
+    /* NOTE: this also sets ou the same style for the button on the contact page with the id 'showform'*/
 }
 
 
